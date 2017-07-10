@@ -14,11 +14,11 @@ class TbDistrict extends Migration
     public function up()
     {
         //
-        Schema::create('tb_district', function (Blueprint $table) {
+        Schema::create('db_hd.tb_district', function (Blueprint $table) {
             $table->increments('id');
             $table->string('name_cn')->default('')->comment('中文名');
             $table->string('name_en')->default('')->comment('英文名');
-            $table->integer('status')->default(-1)->comment('状态');
+            $table->integer('f_status')->default(-1)->comment('状态');
             $table->integer("country_id")->default(-1)->comment('国家');
             $table->integer('level')->default(-1)->comment('等级');
             $table->integer('area_id')->default(-1)->comment('区域');
@@ -36,6 +36,6 @@ class TbDistrict extends Migration
     public function down()
     {
         //
-        Schema::dropIfExists('tb_district');
+        Schema::dropIfExists('db_hd.tb_district');
     }
 }

@@ -12,6 +12,9 @@ php artisan  migrate:refresh --force
 php artisan  migrate --verbose
 php artisan help cmd
 
+php artisan make:migration:schema create_dogs_table --schema="name:string"
+composer update
+
 ```
 
 ### mysql
@@ -19,4 +22,11 @@ php artisan help cmd
 mysql -uazkaban -p db_hd < /apps/weixin/sdy/resources/tb_district.txt
 
 
+```
+
+### debug
+```
+ var_dump()
+ print_r()
+ xdebug
 ```

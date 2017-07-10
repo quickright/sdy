@@ -6,6 +6,8 @@ use Illuminate\Database\Migrations\Migration;
 
 class CreateTableCountry extends Migration
 {
+        protected $connection="db_hd";
+
     /**
      * Run the migrations.
      *
@@ -13,11 +15,11 @@ class CreateTableCountry extends Migration
      */
     public function up()
     {
-        Schema::create('tb_country', function (Blueprint $table) {
+        Schema::create('db_hd.tb_country', function (Blueprint $table) {
             $table->increments('id');
             $table->string('name_cn')->default('')->comment('中文名');
             $table->string('name_en')->default('')->comment('英文名');
-            $table->integer('status')->default(-1)->comment('状态');
+            $table->integer('f_status')->default(-1)->comment('状态');
             $table->timestamps();
         });
     }
@@ -29,6 +31,6 @@ class CreateTableCountry extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('tb_country');
+        Schema::dropIfExists('db_hd.tb_country');
     }
 }

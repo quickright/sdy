@@ -39,7 +39,22 @@ return [
             'prefix' => '',
         ],
 
-        'mysql' => [
+        'db_page' => [
+            'driver' => 'mysql',
+            'host' => env('DB_HOST', '127.0.0.1'),
+            'port' => env('DB_PORT', '3306'),
+            'database' => env('DB_DATABASE', 'db_page'),
+            'username' => env('DB_USERNAME', 'azkaban'),
+            'password' => env('DB_PASSWORD', 'azkaban@mfb.2016'),
+            'unix_socket' => env('DB_SOCKET', ''),
+            'charset' => 'utf8mb4',
+            'collation' => 'utf8mb4_unicode_ci',
+            'prefix' => '',
+            'strict' => true,
+            'engine' => null,
+        ],
+
+        'db_hd' => [
             'driver' => 'mysql',
             'host' => env('DB_HOST', '127.0.0.1'),
             'port' => env('DB_PORT', '3306'),
@@ -53,8 +68,7 @@ return [
             'strict' => true,
             'engine' => null,
         ],
-
-        'db_hd' => [
+        'mysql' => [
             'driver' => 'mysql',
             'host' => env('DB_HOST', '127.0.0.1'),
             'port' => env('DB_PORT', '3306'),

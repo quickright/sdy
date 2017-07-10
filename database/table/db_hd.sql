@@ -249,6 +249,67 @@ CREATE TABLE `tb_discount_product` (
   KEY `promotion_id` (`promotion_id`),
   KEY `idx_title` (`title`(255))
 ) ENGINE=InnoDB AUTO_INCREMENT=114247 DEFAULT CHARSET=utf8 COMMENT='医院产品表';
+
+
+
+ CREATE TABLE `tb_user` (
+  `uid` bigint(20) NOT NULL AUTO_INCREMENT COMMENT '用户id',
+  `login_name` varchar(255) NOT NULL DEFAULT '' COMMENT '登录名',
+  `login_mobile` bigint(15) DEFAULT NULL COMMENT '登录手机号',
+  `user_name` varchar(100) NOT NULL DEFAULT '' COMMENT '用户名',
+  `user_name_crc32` bigint(20) DEFAULT NULL,
+  `user_type` tinyint(3) unsigned NOT NULL DEFAULT '0' COMMENT '用户类型',
+  `status` tinyint(2) NOT NULL DEFAULT '0' COMMENT '用户状态',
+  `active` tinyint(1) unsigned NOT NULL DEFAULT '0' COMMENT ' 是否激活',
+  `password` varchar(220) NOT NULL DEFAULT '' COMMENT '密码',
+  `password_encrypt` varchar(255) NOT NULL DEFAULT '' COMMENT '密码加密',
+  `ran_token` varchar(255) NOT NULL DEFAULT '' COMMENT '校验cookie token',
+  `mobile` bigint(11) unsigned NOT NULL DEFAULT '0',
+  `gender` enum('0','1','2') NOT NULL DEFAULT '2' COMMENT '性别',
+  `avatar` varchar(300) NOT NULL DEFAULT '0' COMMENT '头像',
+  `age` tinyint(3) unsigned NOT NULL DEFAULT '0' COMMENT '年龄区间',
+  `province_id` int(10) unsigned NOT NULL DEFAULT '0' COMMENT '省',
+  `city_id` int(10) unsigned NOT NULL DEFAULT '0' COMMENT '市',
+  `district_id` int(10) unsigned NOT NULL DEFAULT '0' COMMENT '区县',
+  `intro` varchar(300) NOT NULL DEFAULT '' COMMENT '简介',
+  `admin_level` tinyint(3) unsigned NOT NULL DEFAULT '0',
+  `ban_yn` tinyint(1) unsigned NOT NULL DEFAULT '0' COMMENT '禁言',
+  `gag_yn` tinyint(1) unsigned NOT NULL DEFAULT '0' COMMENT '限时禁言',
+  `gag_start_time` int(10) unsigned NOT NULL DEFAULT '0' COMMENT '限时禁言开始时间',
+  `gag_end_time` int(10) unsigned NOT NULL DEFAULT '0' COMMENT '限时禁言结束时间',
+  `certified_type` tinyint(2) unsigned NOT NULL DEFAULT '0',
+  `certified_id` int(10) unsigned NOT NULL DEFAULT '0',
+  `sys` tinyint(3) unsigned NOT NULL DEFAULT '0',
+  `app_id` int(10) NOT NULL DEFAULT '0' COMMENT '应用ID',
+  `device_id` int(10) unsigned NOT NULL DEFAULT '0',
+  `msg_id` int(11) NOT NULL DEFAULT '0' COMMENT '推送信息ID',
+  `last_active_time` int(10) NOT NULL DEFAULT '0',
+  `update_token_yn` tinyint(1) NOT NULL DEFAULT '0' COMMENT '是否更新了token：1是0否',
+  `hx_id` varchar(40) DEFAULT NULL COMMENT '环信id',
+  `hx_password` varchar(100) NOT NULL DEFAULT '' COMMENT '环信通讯密码',
+  `create_date` datetime NOT NULL DEFAULT '0000-00-00 00:00:00' COMMENT '创建时间',
+  `update_date` datetime NOT NULL DEFAULT '0000-00-00 00:00:00' COMMENT '更新时间',
+  `create_ip` varchar(50) NOT NULL DEFAULT '' COMMENT '注册IP',
+  `xysource` int(10) NOT NULL DEFAULT '0' COMMENT '来源渠道',
+  `isbind` tinyint(3) NOT NULL DEFAULT '1' COMMENT '是否绑定',
+  `update_invite_num` int(11) NOT NULL DEFAULT '0' COMMENT '邀请的次数',
+  `countrycode` varchar(10) NOT NULL DEFAULT '' COMMENT '国家码',
+  `sphinx_update` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP COMMENT '最后更新时间',
+  PRIMARY KEY (`uid`),
+  UNIQUE KEY `idx_login` (`login_name`),
+  UNIQUE KEY `user_name_crc32` (`user_name_crc32`),
+  UNIQUE KEY `login_mobile` (`login_mobile`),
+  KEY `idx_active_time` (`last_active_time`),
+  KEY `idx_cer` (`certified_id`,`certified_type`),
+  KEY `user_type` (`user_type`,`status`),
+  KEY `idx_cert_type_status` (`certified_type`,`status`),
+  KEY `user_name` (`user_name`),
+  KEY `idx_create_date` (`create_date`)
+) ENGINE=InnoDB AUTO_INCREMENT=14548853 DEFAULT CHARSET=utf8
+
+
+
+ 
  tb_order | CREATE TABLE `tb_order` (
   `order_id` bigint(20) unsigned NOT NULL AUTO_INCREMENT,
   `product_type` tinyint(3) unsigned NOT NULL DEFAULT '0' COMMENT '产品类型',

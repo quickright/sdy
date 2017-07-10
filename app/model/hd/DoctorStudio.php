@@ -1,10 +1,10 @@
 <?php
 
-namespace App\hd;
+namespace App\model\hd;
 
 use Illuminate\Database\Eloquent\Model;
 
-class Center extends Model
+class DoctorStudio extends Model
 {
     //
 }

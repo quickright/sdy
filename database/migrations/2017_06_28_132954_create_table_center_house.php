@@ -6,6 +6,8 @@ use Illuminate\Database\Migrations\Migration;
 
 class CreateTableCenterHouse extends Migration
 {
+    protected $connection="db_hd";
+
     /**
      * Run the migrations.
      *
@@ -13,7 +15,7 @@ class CreateTableCenterHouse extends Migration
      */
     public function up()
     {
-        Schema::create('tb_center_house', function (Blueprint $table) {
+        Schema::create('db_hd.tb_center_house', function (Blueprint $table) {
             $table->increments('id');
             $table->timestamps();
         });
@@ -26,6 +28,6 @@ class CreateTableCenterHouse extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('tb_center_house');
+        Schema::dropIfExists('db_hd.tb_center_house');
     }
 }

@@ -4,10 +4,8 @@ use Illuminate\Support\Facades\Schema;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
 
-class CreateTableDoctorImg extends Migration
+class Reset extends Migration
 {
-            protected $connection="db_hd";
-
     /**
      * Run the migrations.
      *
@@ -15,10 +13,7 @@ class CreateTableDoctorImg extends Migration
      */
     public function up()
     {
-        Schema::create('db_hd.tb_doctor_img', function (Blueprint $table) {
-            $table->increments('id');
-            $table->timestamps();
-        });
+        //
     }
 
     /**
@@ -28,6 +23,6 @@ class CreateTableDoctorImg extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('db_hd.tb_doctor_img');
+        //
     }
 }

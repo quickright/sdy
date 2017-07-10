@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use Illuminate\Support\Facades\Auth;
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
 use App\hd\District;
@@ -25,11 +26,18 @@ class DistrictController extends Controller
     {
         $this->model_district = $district;
         $this->model_country = $country;
+        //$this->middleware('auth');
+
     }
 
  	public function show($id)
     {
     	$data=$this->model_district->findOrFail($id);
+ 
+ 		//return Auth::id();
+ 		//$user=Auth::user();
+ 		//$request->user()
+ 		//if (Auth::check()) {}
     	return response()->json($data);
     }
 

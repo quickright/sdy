@@ -1,0 +1,385 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"帖子",
+				"帖子浏览数量"
+			],
+			[
+				"D",
+				"District"
+			]
+		]
+	},
+	"buffers":
+	[
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 107.0,
+		"last_filter": "Package Control: int",
+		"selected_items":
+		[
+			[
+				"Package Control: int",
+				"Package Control: Install Package"
+			],
+			[
+				"Package Control: insta",
+				"Package Control: Install Package"
+			],
+			[
+				"Package Control: in",
+				"Package Control: Install Package"
+			],
+			[
+				"Package Control: install",
+				"Package Control: Install Package"
+			],
+			[
+				"Package Control: ",
+				"Package Control: Install Package"
+			]
+		],
+		"width": 521.0
+	},
+	"console":
+	{
+		"height": 126.0,
+		"history":
+		[
+			"import urllib.request,os,hashlib; h = 'df21e130d211cfc94d9b0905775a7c0f' + '1e3d39e33b79698005270310898eea76'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://packagecontrol.io/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by)"
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+		"/apps/weixin/sdy"
+	],
+	"file_history":
+	[
+		"/apps/weixin/sdy/app/hd/User.php",
+		"/apps/weixin/sdy/cmd.md",
+		"/apps/weixin/sdy/database/migrations/2017_07_10_034803_create_posts_table.php",
+		"/apps/weixin/sdy/database/migrations/2014_10_12_100000_create_password_resets_table.php",
+		"/apps/weixin/sdy/database/migrations/2017_07_03_125142_tb_weixin.php",
+		"/apps/weixin/sdy/database/migrations/2017_06_30_101610_tb_district.php",
+		"/apps/weixin/sdy/database/migrations/2017_06_29_133858_create_table_doctor_studio.php",
+		"/apps/weixin/sdy/database/migrations/2017_06_28_133407_create_table_user.php",
+		"/apps/weixin/sdy/database/migrations/2017_06_28_133355_create_table_area.php",
+		"/apps/weixin/sdy/database/migrations/2017_06_28_133339_create_table_country.php",
+		"/apps/weixin/sdy/database/migrations/2017_07_03_152526_create_table_calendar.php",
+		"/apps/weixin/sdy/database/migrations/2017_07_03_152542_create_table_calendar_group.php",
+		"/apps/weixin/sdy/database/migrations/2017_07_04_023949_create_table_post.php",
+		"/apps/weixin/sdy/database/migrations/2017_06_28_132954_create_table_center_house.php",
+		"/apps/weixin/sdy/database/migrations/2017_06_28_132934_create_table_center.php",
+		"/apps/weixin/sdy/database/migrations/2017_06_28_132919_create_table_center_img.php",
+		"/apps/weixin/sdy/database/migrations/2017_06_28_132832_create_table_doctor_img.php",
+		"/apps/weixin/sdy/database/migrations/2017_06_28_132816_create_table_hospital_img.php",
+		"/apps/weixin/sdy/database/migrations/2017_06_28_132745_create_table_hospital.php",
+		"/apps/weixin/sdy/database/migrations/2017_06_28_132326_create_table_doctor.php",
+		"/apps/weixin/sdy/database/migrations/2014_10_12_000000_create_users_table.php",
+		"/apps/weixin/sdy/vendor/laravel/framework/src/Illuminate/Auth/DatabaseUserProvider.php",
+		"/apps/weixin/sdy/config/auth.php",
+		"/apps/weixin/sdy/config/app.php",
+		"/apps/weixin/sdy/resources/lang/en/validation.php",
+		"/apps/weixin/sdy/app/Http/Controllers/Auth/RegisterController.php",
+		"/apps/weixin/sdy/routes/web.php",
+		"/apps/weixin/sdy/vendor/composer/autoload_classmap.php",
+		"/apps/weixin/sdy/vendor/composer/autoload_static.php",
+		"/apps/weixin/sdy/resources/views/auth/register.blade.php",
+		"/apps/weixin/sdy/app/Http/Controllers/Auth/LoginController.php",
+		"/apps/weixin/sdy/vendor/laravel/framework/src/Illuminate/Foundation/Auth/RegistersUsers.php",
+		"/apps/weixin/sdy/Users.php",
+		"/apps/weixin/sdy/app/hd/Users.php",
+		"/apps/weixin/sdy/composer.json",
+		"/apps/weixin/sdy/app/Http/Controllers/Auth/ResetPasswordController.php",
+		"/apps/weixin/sdy/app/Http/Controllers/DistrictController.php",
+		"/apps/weixin/sdy/config/database.php",
+		"/apps/weixin/sdy/database/table/db_hd.sql",
+		"/apps/weixin/sdy/2017_06_30_071252_create_countries_table.php",
+		"/apps/weixin/sdy/app/Http/Controllers/DoctorController.php",
+		"/apps/weixin/sdy/app/hd/Doctor.php",
+		"/apps/weixin/sdy/app/Http/Controllers/doctor.php",
+		"/apps/weixin/sdy/app/hd/District.php",
+		"/apps/weixin/sdy/app/Http/Controllers/HospitalController.php",
+		"/apps/weixin/sdy/app/hd/Hospital.php",
+		"/apps/weixin/sdy/app/Providers/AppServiceProvider.php",
+		"/apps/weixin/sdy/app/hd/Country.php",
+		"/apps/weixin/sdy/database/migrations/2017_06_30_071252_create_countries_table.php",
+		"/apps/weixin/sdy/app/hd/Product.php",
+		"/apps/weixin/sdy/database/migrations/2017_06_30_070809_create_hospitals_table.php",
+		"/apps/weixin/sdy/app/hd/DoctorStudio.php",
+		"/apps/weixin/sdy/app/Http/Controllers/CenterController.php",
+		"/apps/weixin/sdy/app/hd/Center.php",
+		"/apps/weixin/sdy/bootstrap/app.php",
+		"/apps/weixin/sdy/.env",
+		"/apps/weixin/sdy/app/Http/Controllers/Controller.php",
+		"/apps/weixin/sdy/app/hd/Hosptial.php",
+		"/apps/weixin/sdy/app/doctor.php",
+		"/apps/weixin/sdy/public/js/app.js",
+		"/apps/weixin/sdy/resources/assets/js/app.js",
+		"/apps/weixin/sdy/public/index.php",
+		"/apps/weixin/sdy/resources/views/welcome.blade.php",
+		"/apps/weixin/sdy/app/User.php",
+		"/apps/weixin/sdy/resources/views/boot.blade.php",
+		"/Users/chunli/Desktop/sql/相关日历/dfad",
+		"/Users/chunli/Desktop/sql/相关日历/elk 权限 kibana",
+		"/Users/chunli/Desktop/sql/相关日历/fdasf",
+		"/Users/chunli/Desktop/sql/相关日历/untitleddddd",
+		"/Users/chunli/Desktop/sql/相关日历/-- 日历用户关系点入统计(uid%5=2) user_type=5, source=5 用户关系",
+		"/Users/chunli/Desktop/sql/相关日历/创建表：",
+		"/Users/chunli/Library/Application Support/Sublime Text 3/Packages/ConvertToUTF8/ConvertToUTF8.sublime-settings",
+		"/Users/chunli/Downloads/pv.csv",
+		"/Users/chunli/Desktop/sql/untitleddddd",
+		"/Users/chunli/Desktop/sql/elk 权限 kibana",
+		"/Users/chunli/Desktop/sql/dfad",
+		"/Users/chunli/Desktop/sql/-- 日历用户关系点入统计(uid%5=2) user_type=5, source=5 用户关系",
+		"/Users/chunli/Desktop/sql/all",
+		"/Users/chunli/Desktop/sql/创建表：",
+		"/Users/chunli/Desktop/sql/fdasf",
+		"/Users/chunli/Downloads/uip.csv",
+		"/Users/chunli/Desktop/sql/看板做一周活动",
+		"/Users/chunli/Desktop/sql/select count(distinct uid) from s_ppt_user_login_l",
+		"/Users/chunli/Desktop/sql/10 0 * * * :data:app:uservlevel:bin:level1.sh",
+		"/Users/chunli/Desktop/sql/select '${hivevar:dp_1}' as t_date,'calendar' as o"
+	],
+	"find":
+	{
+		"height": 35.0
+	},
+	"find_in_files":
+	{
+		"height": 93.0,
+		"where_history":
+		[
+			"/apps/weixin/sdy",
+			""
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"Users.php",
+			"users",
+			"App\\User;",
+			"user",
+			"logout",
+			"users",
+			"CreateTableCalendar",
+			"username",
+			"db_page",
+			"cookie",
+			"default('')",
+			"0",
+			"''",
+			"countries",
+			"‘’",
+			"‘",
+			"‘’",
+			"debug",
+			"homestead",
+			"Migration",
+			"Laravel",
+			"partitions",
+			"web",
+			"wap",
+			"app",
+			"h5",
+			"dp=",
+			"/'",
+			"tp=",
+			"dp",
+			"alter table tmp.log_ip drop partitions(dp",
+			" ip ",
+			" uid",
+			"uid",
+			"log_ip",
+			"tmp.",
+			"directory",
+			"create ",
+			"create",
+			"cc1",
+			"cc2",
+			"cc1",
+			"create",
+			"log_user",
+			"cook",
+			"log_ip",
+			"uip",
+			"hive",
+			"client",
+			"hbase",
+			") (",
+			","
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+			"App\\hd\\User;",
+			"default(-1)",
+			"-1",
+			"0",
+			"''",
+			"partition",
+			"web');",
+			"wap');",
+			"app');",
+			"h5');",
+			"dp='",
+			"'",
+			"',tp='",
+			"alter table tmp.log_ip drop partitions(dp",
+			"dp",
+			"),(",
+			"','"
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"sheets":
+			[
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 23.0
+	},
+	"input":
+	{
+		"height": 31.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"pinned_build_system": "",
+	"project": "sdy.sublime-project",
+	"replace":
+	{
+		"height": 64.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"registers",
+				"vendor/laravel/framework/src/Illuminate/Foundation/Auth/RegistersUsers.php"
+			],
+			[
+				"vali",
+				"resources/lang/en/validation.php"
+			],
+			[
+				"users",
+				"app/hd/Users.php"
+			],
+			[
+				"databaseuser",
+				"vendor/laravel/framework/src/Illuminate/Auth/DatabaseUserProvider.php"
+			],
+			[
+				"center",
+				"app/Http/Controllers/CenterController.php"
+			],
+			[
+				"web",
+				"routes/web.php"
+			],
+			[
+				"doctor",
+				"app/hd/Doctor.php"
+			]
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+		"xdebug":
+		{
+			"hide_conflict": false
+		}
+	},
+	"show_minimap": true,
+	"show_open_files": true,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 311.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}

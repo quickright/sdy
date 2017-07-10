@@ -6,6 +6,8 @@ use Illuminate\Database\Migrations\Migration;
 
 class CreateTableDoctor extends Migration
 {
+            protected $connection="db_hd";
+
     /**
      * Run the migrations.
      *
@@ -13,7 +15,7 @@ class CreateTableDoctor extends Migration
      */
     public function up()
     {
-        Schema::create('tb_doctor', function (Blueprint $table) {
+        Schema::create('db_hd.tb_doctor', function (Blueprint $table) {
             $table->increments('id');
             $table->string('name_cn')->default('')->comment('中文名');
             $table->string('name_en')->default('')->comment('英文名');
@@ -50,6 +52,6 @@ class CreateTableDoctor extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('tb_doctor');
+        Schema::dropIfExists('db_hd.tb_doctor');
     }
 }

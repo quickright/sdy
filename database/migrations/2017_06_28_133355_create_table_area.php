@@ -13,7 +13,7 @@ class CreateTableArea extends Migration
      */
     public function up()
     {
-        Schema::create('tb_area', function (Blueprint $table) {
+        Schema::create('db_hd.tb_area', function (Blueprint $table) {
             $table->increments('id');
             $table->timestamps();
         });
@@ -26,6 +26,6 @@ class CreateTableArea extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('tb_area');
+        Schema::dropIfExists('db_hd.tb_area');
     }
 }
