@@ -5,8 +5,8 @@ namespace App\Http\Controllers;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
-use App\hd\District;
-use App\hd\Country;
+use App\Model\Hd\District;
+use App\Model\Hd\Country;
 
 class DistrictController extends Controller
 {

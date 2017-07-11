@@ -30,3 +30,18 @@ mysql -uazkaban -p db_hd < /apps/weixin/sdy/resources/tb_district.txt
  print_r()
  xdebug
 ```
+
+### 验证码
+```
+https://github.com/mewebstudio/captcha
+
+mac:
+cp /private/etc/php.ini.default /private/etc/php.ini
+vim php.ini 
+extension=php_gd2.dll
+
+yum install php-gd
+brew reinstall --build-from-source php56-intl
+
+restart
+```
